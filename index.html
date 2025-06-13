@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <input id="screen"  type="text" placeholder="0">
+        </div>
+        <div class="button">
+            <div class="row">
+                <button onclick="del_all()" class="btn">AC</button>
+                <button onclick="del()"class="btn">DEL</button>
+                <button onclick="add_element('%')" class="btn">%</button>
+                <button onclick="add_element('/')" class="operator_button">/</button>
+            </div>
+            <div class="row">
+                <button onclick="add_element('7')" >7</button>
+                <button onclick="add_element('8')">8</button>
+                <button onclick="add_element('9')">9</button>
+                <button onclick="add_element('*')" class="operator_button">X</button>
+            </div>
+            <div class="row">
+                <button onclick="add_element('4')">4</button>
+                <button onclick="add_element('5')">5</button>
+                <button onclick="add_element('6')">6</button>
+                <button onclick="add_element('-')" class="operator_button">-</button>
+            </div>
+            <div class="row">
+                <button onclick="add_element('1')">1</button>
+                <button onclick="add_element('2')">2</button>
+                <button onclick="add_element('3')">3</button>
+                <button onclick="add_element('+')" class="operator_button">+</button>
+            </div>
+            <div class="row">
+                <button onclick="add_element('0')">0</button>
+                <button onclick="add_element('00')">00</button>
+                <button onclick="add_element('.')">.</button>
+                <button onclick="calc()" class="operator_button">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
