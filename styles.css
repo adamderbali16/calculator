@@ -73,3 +73,10 @@ button:active{
 .btn:active{
     background-color: rgb(81, 81, 81);
 }
+@media (max-width:500px){
+    .calculator{
+        width: 500px;
+        padding: 10px;
+    }
+
+}
